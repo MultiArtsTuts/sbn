@@ -17,6 +17,7 @@ export class CategoriePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public restProvider: RestProvider) {
     this.item = navParams.get("item");
+    console.log(this.item.title)
   }
 
   ionViewDidLoad() {

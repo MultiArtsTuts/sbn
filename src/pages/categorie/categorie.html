@@ -3,7 +3,7 @@
       <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
       </button>
-    <ion-title>{{item.title}} Cacete</ion-title>
+    <ion-title>Categoria: {{item.id}} Cacete</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -12,7 +12,7 @@
 <ion-content padding>
   <ion-list>
     <button ion-item *ngFor="let item of categories" (click)="openClient(item)">
-      {{ item.title }}
+      {{ item.title }}<br><small>{{ item.endereco }}</small>
     </button>
   </ion-list>
 

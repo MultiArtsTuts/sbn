@@ -18,11 +18,7 @@ export class CategorieDetailPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.clientID = navParams.get('clientID');
-    console.log('Cliente name: ' + this.clientID.name);
-  }
-
-  ionViewDidLoad() {
-    console.log(this.clientID);
+    console.log('Cliente name: ' + this.clientID.title);
   }
 
 }

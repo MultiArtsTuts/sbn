@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { RestProvider } from '../../providers/rest/rest';
 
 import { CategorieDetailPage } from '../categorie-detail/categorie-detail';
@@ -15,20 +15,27 @@ export class CategoriePage {
   item: any;
   clientID: any=[];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public restProvider: RestProvider) {
+  constructor(
+      public navCtrl: NavController,
+      public navParams: NavParams,
+      public restProvider: RestProvider,
+      public loadingController: LoadingController
+    )
+  {
     this.item = navParams.get("item");
     console.log(this.item.title)
   }
 
   ionViewDidLoad() {
-    this.getCatId(this.item)
-  }
-
-  getCatId(item){
+    let loader = this.loadingController.create({
+      content: "Aguarde..."
+    });
+    loader.present();
     this.restProvider.getCatId(this.item)
     .then(data => {
       this.categories = data;
       console.log(this.item);
+      loader.dismiss();
     })
   }
 

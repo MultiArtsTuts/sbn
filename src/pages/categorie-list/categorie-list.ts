@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { RestProvider } from '../../providers/rest/rest';
 import { CategoriePage } from '../categorie/categorie';
 
@@ -11,16 +11,19 @@ import { CategoriePage } from '../categorie/categorie';
 export class CategorieListPage {
   categories: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public restProvider: RestProvider) {
-    this.getCategories();
+  constructor(public navCtrl: NavController, public navParams: NavParams, public restProvider: RestProvider, public loadingController: LoadingController) {
+    // this.getCategories();
   }
 
-  ionViewDidLoad() {}
-
-  getCategories(){
+  ionViewDidLoad() {
+    let loader = this.loadingController.create({
+      content: "Aguarde..."
+    });
+    loader.present();
     this.restProvider.getCategories()
     .then(data => {
       this.categories = data;
+      loader.dismiss();
     })
   }
 

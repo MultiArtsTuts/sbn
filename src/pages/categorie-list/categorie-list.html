@@ -1,0 +1,20 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Todas as categorias</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list inset>
+    <button ion-item *ngFor="let c of categories" (click)="openItem(c.id)">
+      <h2>{{c.name}}</h2>
+      <p>{{c.email}}</p>
+    </button>
+  </ion-list>
+</ion-content>

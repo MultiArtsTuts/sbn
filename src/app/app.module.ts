@@ -11,13 +11,17 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { RestProvider } from '../providers/rest/rest';
 import { CategorieListPage } from '../pages/categorie-list/categorie-list';
+import { CategoriePage } from '../pages/categorie/categorie';
+import { CategorieDetailPage } from '../pages/categorie-detail/categorie-detail';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
-    CategorieListPage
+    CategorieListPage,
+    CategoriePage,
+    CategorieDetailPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,9 @@ import { CategorieListPage } from '../pages/categorie-list/categorie-list';
     MyApp,
     HomePage,
     ListPage,
-    CategorieListPage
+    CategorieListPage,
+    CategoriePage,
+    CategorieDetailPage
   ],
   providers: [
     StatusBar,

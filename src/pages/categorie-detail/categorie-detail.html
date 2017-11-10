@@ -4,13 +4,13 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-  <ion-title>{{ clientID.name }}</ion-title>
+  <ion-title>{{ clientID.title }}</ion-title>
 </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <strong>{{ clientID.name }}</strong><br>
-  <p>{{ clientID.description }}</p>
+  <strong>{{ clientID.title }}</strong><br>
+  <small>{{ clientID.endereco }} | Fone: {{ clientID.phone }}</small>
 </ion-content>

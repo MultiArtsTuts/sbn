@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import 'rxjs/add/operator/map';
+import { Observable } from 'rxjs/Observable';
 
 /*
   Generated class for the RestProvider provider.

@@ -12,7 +12,7 @@
 
 <ion-content padding>
   <ion-list inset>
-    <button ion-item *ngFor="let c of categories" (click)="openItem(c.id)">
+    <button ion-item *ngFor="let c of categories" (click)="openItem(c.slug)">
       <h2>{{c.title}}</h2>
       <p>{{c.email}}</p>
     </button>

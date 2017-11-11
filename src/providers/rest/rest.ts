@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import 'rxjs/add/operator/map';
-import { Observable } from 'rxjs/Observable';
 
 /*
   Generated class for the RestProvider provider.
@@ -14,7 +13,7 @@ import { Observable } from 'rxjs/Observable';
 export class RestProvider {
 
   apiUrl = 'https://jsonplaceholder.typicode.com';
-  apiLaravel = 'http://172.18.0.6/api/v1/'
+  apiLaravel = 'http://172.17.0.1/api/v1/'
 
   constructor(public http: HttpClient) {}
 

@@ -23,7 +23,7 @@ export class CategoriePage {
     )
   {
     this.item = navParams.get("item");
-    console.log(this.item.title)
+    console.log(this.item.catName)
   }
 
   ionViewDidLoad() {

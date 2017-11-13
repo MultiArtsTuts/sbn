@@ -13,7 +13,7 @@ import { CategorieDetailPage } from '../categorie-detail/categorie-detail';
 export class CategoriePage {
   categories: any;
   item: any;
-  clientID: any=[];
+  clientID: any;
   title: any;
 
   constructor(

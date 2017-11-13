@@ -12,7 +12,7 @@
 
 <ion-content>
   <ion-list>
-    <div *ngFor="let c of categories" class="padding_helper" (click)="openItem(c.slug)" [style.backgroundImage]="'url(' + c.image + ')'">
+    <div *ngFor="let c of categories" class="padding_helper" (click)="openItem(c.slug, c.title)" [style.backgroundImage]="'url(' + c.image + ')'">
 
         <div class="image__padding" text-center>
           <p class="section__headline">

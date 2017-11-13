@@ -14,6 +14,7 @@ export class CategoriePage {
   categories: any;
   item: any;
   clientID: any=[];
+  title: any;
 
   constructor(
       public navCtrl: NavController,
@@ -23,6 +24,7 @@ export class CategoriePage {
     )
   {
     this.item = navParams.get("item");
+    this.title = navParams.get('title');
     // console.log(this.item.catName)
   }
 
@@ -34,7 +36,7 @@ export class CategoriePage {
     this.restProvider.getCatId(this.item)
     .then(data => {
       this.categories = data;
-      console.log(this.item);
+      console.log(this.title);
       loader.dismiss();
     })
   }

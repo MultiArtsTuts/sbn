@@ -12,6 +12,7 @@ export class HomePage {
 
   clientID: any;
   clients: any;
+  activeSlide= 0;
 
   constructor(public navCtrl: NavController, public restProvider: RestProvider, public loadingController: LoadingController) {}
 

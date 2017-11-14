@@ -8,11 +8,21 @@
 </ion-header>
 
 <ion-content>
-  <ion-slides pager>
-    <ion-slide *ngFor="let item of clients" (click)="openClient('item')">
+  <ion-slides *ngIf="clients && clients.length"  pager="true" autoplay="1000" loop="true" speed="3000">
+    <ion-slide *ngFor="let item of clients" (click)="openClient('item')" [style.backgroundImage]="'url(' + item.photo + ')'">
       <h2>{{ item.title }}</h2>
       <p>{{ item.endereco }}</p>
     </ion-slide>
-
   </ion-slides>
+
+  <ion-col>
+	  <ion-row>
+		  Col 1
+	  </ion-row>
+  </ion-col>
+  <ion-col>
+	  <ion-row>
+		  Col 2
+	  </ion-row>
+  </ion-col>
 </ion-content>

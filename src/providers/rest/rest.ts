@@ -64,7 +64,7 @@ export class RestProvider {
   // Slide Client Home
   getClients(){
     return new Promise(resolve => {
-      this.http.get(this.apiLaravel + 'clients/').subscribe(data => {
+      this.http.get(this.apiLaravel + 'featured/').subscribe(data => {
         resolve(data);
       }, err => {
         console.log(err);

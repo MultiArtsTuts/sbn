@@ -25,7 +25,6 @@ export class CategoriePage {
   {
     this.item = navParams.get("item");
     this.title = navParams.get('title');
-    // console.log(this.item.catName)
   }
 
   ionViewDidLoad() {

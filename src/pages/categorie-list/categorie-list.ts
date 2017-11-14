@@ -11,7 +11,6 @@ import { CategoriePage } from '../categorie/categorie';
 export class CategorieListPage {
   categories: any;
 
-
   constructor(public navCtrl: NavController, public navParams: NavParams, public restProvider: RestProvider, public loadingController: LoadingController) {}
 
   ionViewDidLoad() {

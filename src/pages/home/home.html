@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar color="primary">
+  <ion-navbar color="grey">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -9,9 +9,12 @@
 
 <ion-content>
   <ion-slides *ngIf="clients && clients.length"  pager="true" autoplay="1000" loop="true" speed="3000">
-    <ion-slide *ngFor="let item of clients" (click)="openClient('item')" [style.backgroundImage]="'url(' + item.photo + ')'">
-      <h2>{{ item.title }}</h2>
-      <p>{{ item.endereco }}</p>
+    <ion-slide *ngFor="let item of clients" (click)="openClient('item')">
+		<div class="img" [style.backgroundImage]="'url(' + item.photo + ')'">
+			<h2>{{ item.title }}</h2>
+			<p>{{ item.endereco }}</p>
+		</div>
+
     </ion-slide>
   </ion-slides>
 
@@ -25,4 +28,12 @@
 		  Col 2
 	  </ion-row>
   </ion-col>
+
+  	<ion-fab right bottom>
+		<button ion-fab color="danger"><ion-icon name="add"></ion-icon></button>
+		<ion-fab-list side="top">
+		  <button ion-fab (click)="editDetails()"><ion-icon name="create" ></ion-icon></button>
+		  <button ion-fab (click)="saveContact()"><ion-icon name="person-add"></ion-icon></button>
+		</ion-fab-list>
+	</ion-fab>
 </ion-content>

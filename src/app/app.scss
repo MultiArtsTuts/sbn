@@ -18,4 +18,17 @@
 //   color: #fff;
 //   background-color: #303030;
 // }
-
+.avatar {
+    height: 20vw;
+    width: 20vw;
+    font-size: 6vw;
+    color: #fff;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+	border-radius: 50%; /* may require vendor prefixes */
+	float: left;
+}
+.scroll-content{
+	margin-top: 75px;
+}

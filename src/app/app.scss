@@ -32,3 +32,18 @@
 .scroll-content{
 	margin-top: 75px;
 }
+.md .menu-inner {
+    background: rgba(0,0,0,.6);
+}
+.content-md{
+	background: linear-gradient(135deg, #00bcd4 0%,#70ced3 100%);
+	background-color: rgba(44, 33, 44, .6);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.item-md{
+	background: transparent;
+	border: 0;
+	color: #fff;
+	text-shadow: 1px 1px 0 #444
+}

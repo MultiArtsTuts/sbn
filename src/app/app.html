@@ -1,19 +1,16 @@
 <ion-menu [content]="content">
   <ion-header>
-    <ion-toolbar color="cyan">
-      <ion-avatar item-start>
-		  <img src="../assets/imgs/logo.png" class="avatar">
-		  <p>João Mello <br>
-		  (71) 99150-1649
-		  </p>
-	  </ion-avatar>
+    <ion-toolbar color="white">
+      <div class="logo">
+
+	  </div>
     </ion-toolbar>
   </ion-header>
 
   <ion-content>
-    <ion-list>
+    <ion-list no-lines>
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
+		<ion-icon [name]="p.icon" item-start></ion-icon> {{ p.title }}
       </button>
     </ion-list>
   </ion-content>

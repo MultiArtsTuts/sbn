@@ -18,32 +18,32 @@
 //   color: #fff;
 //   background-color: #303030;
 // }
-.avatar {
-    height: 20vw;
-    width: 20vw;
+.logo {
+    height: 30vw;
+    width: 100%;
     font-size: 6vw;
-    color: #fff;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-	border-radius: 50%; /* may require vendor prefixes */
-	float: left;
-}
-.scroll-content{
-	margin-top: 75px;
-}
-.md .menu-inner {
-    background: rgba(0,0,0,.6);
-}
-.content-md{
-	background: linear-gradient(135deg, #00bcd4 0%,#70ced3 100%);
+    color: #555;
+    display: block;
+	background: url('../assets/imgs/logoGuia.gif');
 	background-color: rgba(44, 33, 44, .6);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.item-md{
-	background: transparent;
-	border: 0;
-	color: #fff;
-	text-shadow: 1px 1px 0 #444
+.scroll-content{
+	margin-top: 75px;
 }
+// .md .menu-inner {
+//     background: rgba(0,0,0,.6);
+// }
+// .content-md{
+// 	background: linear-gradient(135deg, #00bcd4 0%,#70ced3 100%);
+// 	background-color: rgba(44, 33, 44, .6);
+// 	background-repeat: no-repeat;
+// 	background-size: cover;
+// }
+// .item-md{
+// 	background: transparent;
+// 	border: 0;
+// 	color: #fff;
+// 	text-shadow: 1px 1px 0 #444
+// }

@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 export class RestProvider {
 
   apiUrl = 'https://jsonplaceholder.typicode.com';
-  apiLaravel = 'http://172.17.0.1/api/v1/'
+  apiLaravel = 'http://192.168.10.103/api/v1/'
 
   constructor(public http: HttpClient) {}
 

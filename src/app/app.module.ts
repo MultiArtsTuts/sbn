@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -18,7 +17,6 @@ import { CategorieDetailPage } from '../pages/categorie-detail/categorie-detail'
   declarations: [
     MyApp,
     HomePage,
-    ListPage,
     CategorieListPage,
     CategoriePage,
     CategorieDetailPage
@@ -32,7 +30,6 @@ import { CategorieDetailPage } from '../pages/categorie-detail/categorie-detail'
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
     CategorieListPage,
     CategoriePage,
     CategorieDetailPage

@@ -10,7 +10,15 @@
 </ion-header>
 
 
-<ion-content padding>
-  <strong>{{ clientID.title }}</strong><br>
-  <small>{{ clientID.endereco }} | Fone: {{ clientID.phone }}</small>
+<ion-content full>
+	<ion-card>
+		<ion-card-header>
+			<h2>
+				<strong>{{ clientID.title }}</strong>
+			</h2>
+		</ion-card-header>
+		<ion-card-content>
+			{{ clientID.endereco }} | Fone: {{ clientID.phone }}
+		</ion-card-content>
+	</ion-card>
 </ion-content>

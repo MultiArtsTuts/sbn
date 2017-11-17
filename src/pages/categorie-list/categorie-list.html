@@ -18,12 +18,9 @@
 			[style.backgroundImage]="'url(' + c.image + ')'">
 
 			<div class="image__padding" text-center>
-				<p class="section__headline">
-					{{ c.title }}
-				</p>
-				<p class="category__headline" no-margin>
-					NADA
-				</p>
+				<p class="section__headline" [innerHtml]="c.title"></p>
+
+				<p class="category__headline" no-margin [innerHtml]="c.slug"></p>
 			</div>
 
 		</div>

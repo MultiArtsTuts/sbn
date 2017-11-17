@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { RestProvider } from '../../providers/rest/rest';
 import { CategoriePage } from '../categorie/categorie';
+import { HomePage } from '../home/home';
 
 @IonicPage()
 @Component({
@@ -27,6 +28,10 @@ export class CategorieListPage {
 
   openItem(item, title){
     this.navCtrl.push(CategoriePage, {item: item, title: title})
+  }
+
+  toHome(){
+	  this.navCtrl.setRoot(HomePage)
   }
 
 }

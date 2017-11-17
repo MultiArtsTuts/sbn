@@ -1,28 +1,31 @@
 <ion-header>
-
-  <ion-navbar color="primary">
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Todas as categorias</ion-title>
-  </ion-navbar>
-
+	<ion-navbar color="primary">
+		<ion-buttons left>
+			<button ion-button icon-only (click)="toHome()">
+				<ion-icon name="arrow-back"></ion-icon>
+			</button>
+		</ion-buttons>
+		<ion-title>Todas as categorias</ion-title>
+	</ion-navbar>
 </ion-header>
 
 
 <ion-content>
-  <ion-list>
-    <div *ngFor="let c of categories" class="padding_helper" (click)="openItem(c.slug, c.title)" [style.backgroundImage]="'url(' + c.image + ')'">
+	<ion-list>
+		<div *ngFor="let c of categories"
+			class="padding_helper"
+			(click)="openItem(c.slug, c.title)"
+			[style.backgroundImage]="'url(' + c.image + ')'">
 
-        <div class="image__padding" text-center>
-          <p class="section__headline">
-            {{ c.title }}
-          </p>
-          <p class="category__headline" no-margin>
-            NADA
-          </p>
-        </div>
+			<div class="image__padding" text-center>
+				<p class="section__headline">
+					{{ c.title }}
+				</p>
+				<p class="category__headline" no-margin>
+					NADA
+				</p>
+			</div>
 
-    </div>
-  </ion-list>
+		</div>
+	</ion-list>
 </ion-content>
